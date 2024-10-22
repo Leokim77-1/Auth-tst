@@ -152,7 +152,7 @@
                     <span class="underline"></span>
                 </div>
                 <img id="myimg" src="" alt="Preview Image" class="image-preview">
-                <button type="submit" class="submit-btn"id="create">Register</button>
+                <button class="submit-btn"id="create">Register</button>
             </form>
         </div>
     </div>
@@ -192,6 +192,7 @@
     const user = userCredential.user;
     console.log("created")
   console.log(user)
+      alert(account created successfully!)
   })
   .catch((error) => {
     const errorCode = error.code;
