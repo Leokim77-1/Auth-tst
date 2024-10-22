@@ -365,8 +365,7 @@
 
                     <img src="" alt="upload image" id="myimg" >
 
-    
-<strong class="res">Not Registered!</strong>
+    <div class="res"></div>
     </div>
 
 </div>
@@ -419,8 +418,6 @@
 
         const storage = getStorage(app);
 
-const r = document.querySelector(".res");
-
         document.getElementById("create").addEventListener("click" , function(){ 
 
          var email = document.getElementById("username").value
@@ -437,11 +434,20 @@ const r = document.querySelector(".res");
       
 
 
+// Select the existing div where you want to add the strong element
+const existingDiv = document.querySelector('.res'); // Replace 'yourDivId' with the actual id of your div
 
+// Create a new strong element
+const strongElement = document.createElement('strong');
+
+// Set the text content
+strongElement.textContent = 'Registration Successful!';
+
+// Append the strong element to the existing div
+existingDiv.appendChild(strongElement);
       
 
-  console.log(user)
-      r.innerText = 'Registration Successful!';
+ 
   getDownloadURL(ref(storage, email))
 
 
