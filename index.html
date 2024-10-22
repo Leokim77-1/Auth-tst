@@ -285,6 +285,7 @@
             font-weight: bold;
             font-size: 17px;
             margin-left: 5px;
+            color: black;
         }
 
     </style>
@@ -418,7 +419,7 @@
 
         const storage = getStorage(app);
 
-
+const r = document.querySelector(".res");
 
         document.getElementById("create").addEventListener("click" , function(){ 
 
@@ -433,7 +434,7 @@
     // Signed in 
 
     const user = userCredential.user;
-      const r = document.querySelector(".res");
+      
       r.innerHTML= "Registration Successful!";
 
     alert("Registration Successful!")
