@@ -8,13 +8,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Animated Registration Form</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>auth test</title>
 
     <style>
 
-        * {
+    img{
+
+       max-width:200px  
+
+    }
+
+    
+
+    
+
+            * {
+
+
 
             margin: 0;
+
+
 
             padding: 0;
 
@@ -266,65 +282,87 @@
 
 <body>
 
-    <div class="container">
+  <div class="container">
 
-        <div class="form-box">
+    <div class="form-box">
 
-            <h2>Register</h2>
+    <h2>Register</h2>
 
-            
+    
 
-                <div class="input-box" >
+    <div class="input-box">
 
-                    <input type="email"id="username" required>
+          <input type="email" id="username">
 
-                    <label>Email</label>
+         <label>Email</label>
 
-                    <span class="underline"></span>
-
-                </div>
-
-                <div class="input-box">
-
-                    <input type="password" id="password"required>
-
-                    <label>Password</label>
-
-                    <span class="underline"></span>
-
-                </div>
-
-                <div class="input-box">
-
-                    <input type="file" id="image" required>
-
-                    <label style="margin-top: -30px">Upload Image</label>
-
-                    <span class="underline"></span>
-
-                </div>
-
-              
-
-                <button class="submit-btn"id="create">Register</button>
-
-                <button id="login">login</button>
-
-                    <img src="" alt="upload image" id="myimg" >
-
-        </div>
+                             <span class="underline"></span>
 
     </div>
 
+    
+
+    <div class="input-box">
+
+      
 
 
-      <script type="module">
+
+    <input type="password" id="password">
+
+            <label>Password</label>
+
+                    <span class="underline"></span>
+
+            </div>
+
+    
+
+    
+
+    
+
+<div class="input-box">
+
+      <input type="file" id="image">
 
 
+
+    
+
+
+
+    <button id="login">login</button>
+
+    <button id="create" class="submit-btn">create</button>
+
+    
+
+
+
+    <img src="" alt="upload image" id="myimg" >
+
+                    <span class="underline"></span>
+
+    </div>
+
+ 
+
+    
+
+    
+
+    
+
+    </div>
+
+</div>
+
+
+
+    <script type="module">
 
         // Import the functions you need from the SDKs you need
-
-
 
 
 
@@ -387,8 +425,6 @@
     console.log("created")
 
   console.log(user)
-
-      alert(account created successfully!)
 
   })
 
@@ -484,7 +520,8 @@ getDownloadURL(ref(storage, email))
 
       </script>
 
+    
+
 </body>
 
 </html>
-
