@@ -8,15 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Registration Form</title>
 
-    <title>auth test</title>
-
-    
-
-    
-
-     <style>
+    <style>
 
         * {
 
@@ -266,103 +260,71 @@
 
         }
 
-        
-
-        
-
     </style>
-
-    
 
 </head>
 
 <body>
 
-  
+    <div class="container">
 
-  <div class="container">
+        <div class="form-box">
 
-    <div class="form-box">
+            <h2>Register</h2>
 
-                <h2>Register</h2>
+            
 
-                
+                <div class="input-box" >
 
-                
+                    <input type="email"id="username" required>
 
-                
-
-        <div class="input-box">
-
-              <input type="email" id="username" required>
-
-<label>Email</label>
+                    <label>Email</label>
 
                     <span class="underline"></span>
 
-        </div>       
+                </div>
 
-                
+                <div class="input-box">
 
-       <div class="input-box" >
+                    <input type="password" id="password"required>
 
-         
-
-
-
-    <input type="password" id="password" required>
-
-         <label>Password</label>
-
-
+                    <label>Password</label>
 
                     <span class="underline"></span>
 
-       </div>        
+                </div>
 
-          
+                <div class="input-box">
 
+                    <input type="file" id="image" required>
 
-
-       <div class="input-box" >
-
-    
-
-    <input type="file" id="image">
-
-     <label >Upload Image</label>
+                    <label style="margin-top: -30px">Upload Image</label>
 
                     <span class="underline"></span>
 
-    </div>
+                </div>
 
-    
+                <img id="myimg" src="" alt="Preview Image" class="image-preview">
 
-    
+                <button class="submit-btn"id="create">Register</button>
 
-    <button id="create" class="submit-btn">Register</button>
+                <button id="login">login</button>
 
-        <button id="login">login</button
+                    <img src="" alt="upload image" id="myimg" >
 
-            <img src="" alt="upload image" id="myimg" >
-
-    
-
-
-
-
-
-    </div>
+        </div>
 
     </div>
 
 
 
+      <script type="module">
 
 
-    <script type="module">
 
         // Import the functions you need from the SDKs you need
+
+
 
 
 
@@ -422,9 +384,11 @@
 
     const user = userCredential.user;
 
-    alert("created")
+    console.log("created")
 
   console.log(user)
+
+      alert(account created successfully!)
 
   })
 
@@ -520,8 +484,7 @@ getDownloadURL(ref(storage, email))
 
       </script>
 
-    
-
 </body>
 
-                            </html>
+</html>
+
