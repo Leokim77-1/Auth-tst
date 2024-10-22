@@ -435,13 +435,13 @@ const r = document.querySelector(".res");
 
     const user = userCredential.user;
       
-      r.innerHTML= "Registration Successful!";
 
-    alert("Registration Successful!")
+
+
       
 
   console.log(user)
-
+      r.innerText = 'Registration Successful!';
   getDownloadURL(ref(storage, email))
 
 
