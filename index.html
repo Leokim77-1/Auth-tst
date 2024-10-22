@@ -350,7 +350,7 @@
 
         <button id="create" class="submit-btn">create</button>
 
-    
+                    <img src="" alt="upload image" id="myimg" >
 
     
 
@@ -422,9 +422,29 @@
 
     const user = userCredential.user;
 
-   
+    console.log("created")
 
-  alert("account created")
+  console.log(user)
+
+  getDownloadURL(ref(storage, email))
+
+
+
+  .then((url) => {
+
+
+
+    const img = document.getElementById('myimg');
+
+    img.setAttribute('src', url);
+
+  })
+
+  .catch((error) => {
+
+      console.log(error)
+
+  });
 
   })
 
