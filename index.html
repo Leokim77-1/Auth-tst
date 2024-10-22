@@ -281,6 +281,12 @@
 
         }
 
+        .res{
+            font-weight: bold;
+            font-size: 17px;
+            margin-left: 5px;
+        }
+
     </style>
 
 </head>
@@ -329,7 +335,7 @@
 
 <div class="input-box">
 
-      <input type="file" id="image">
+      <input type="file" id="image"><span class="res"></span>
 
 
 
@@ -427,8 +433,11 @@
     // Signed in 
 
     const user = userCredential.user;
+      const r = document.querySelector(".res");
+      res.innerHTML= "Registration Successful!";
 
     alert("Registration Successful!")
+      
 
   console.log(user)
 
